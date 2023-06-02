@@ -34,7 +34,7 @@ RecyclerView.Adapter<MyAdapter.MyViewHolder>(){
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
        var currentItem = ImagesList[position]
         holder.title.text = currentItem.title
-        Picasso.get().load(currentItem.thumbnailUrl).into(holder.image)
+        Picasso.get().load(currentItem.url).into(holder.image)
 
     }
 
